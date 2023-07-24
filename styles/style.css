@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Seleciona todos os conteuúdos da página. Retirado padding e margin*/
+
+body{
+
+    box-sizing: border-box; /* Ajusta os elementos para que não ultrapassem o limite da página*/
+    color: #F6F6F6; /* Cor da Letra*/
+    background-color: #000; /* Cor da tela*/
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%; /* Valores na ordem: Cima, direita, baixo e esquerda*/
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif; /* estilo de fonte */
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
+.destaque{
+
+    color: #22D4FD; /* Cor da Letra*/
+}
+
+.apresentacao {
+    padding: 3% 15%;
+    display: flex; /* flexbox para alinhar os elementos */
+    align-items: center;
+    justify-content: space-between; /* flexbox para espaçar os elementos */
+  }
+
+.apresentacao__conteudo{
+    width: 615px; /* Unidade de pixel */
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espaço entre elementos */
+    
+
+}
+.titulo{
+    font-size: 36px; /* tamanho da fontes */
+    font-family: 'Krona One', sans-serif; /* estilo de fonte */
+}
+
+.paragrafro{
+    font-size: 24px; /* tamanho da fontes */
+    font-family: 'Montserrat', sans-serif; /* estilo de fonte */
+}
+
+.botoes{
+    display: flex; /* coloca os elementos lado a lado */
+    flex-direction: column; /* Alinhamento na vertical. */
+    justify-content: space-between; /* flexbox para espaçar os elementos */
+    align-items: center; /* Centralizando os elementos */
+    gap: 32px; /* Espaço de 32pixels */
+    
+    
+}
+
+.subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.botoes__estilo{
+    display: flex;
+    justify-content: center; /* flexbox para espaçar os elementos */
+    gap: 16px; /* Espaço de 16pixels */
+    border: 2px solid #22D4FD;
+    width: 378px; /* largura do botão */
+    text-align: center; /* texto centralizado*/
+    border-radius: 8px; /* raio de arredondamento da borda*/
+    font-size: 24px; /* tamanho da letra*/
+    font-weight: 600; /* peso da fonte*/
+    padding: 21.5px 0; /* espaço vertical*/
+    color:#F6F6F6;  /* Cor da letra*/
+    font-family: 'Montserrat', sans-serif; /* estilo de fonte */
+    text-decoration: none; /* retirando sublinhado do hiperlink*/
+}
+
+.botoes__estilo:hover{
+    background-color: #272727;
+}
+
+.rodape{
+    color:#000;
+    background-color: #22D4FD;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+   
+}
