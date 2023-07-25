@@ -25,7 +25,7 @@ body{
 
 .cabecalho__menu__link{
     font-family: 'Montserrat', sans-serif; /* estilo de fonte */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #22D4FD;
     text-decoration: none;
@@ -41,10 +41,11 @@ body{
     display: flex; /* flexbox para alinhar os elementos */
     align-items: center;
     justify-content: space-between; /* flexbox para espaçar os elementos */
+    gap: 80px;
   }
 
 .apresentacao__conteudo{
-    width: 615px; /* Unidade de pixel */
+    width: 50%; /* Unidade de pixel */
     display: flex;
     flex-direction: column;
     gap: 40px; /* Espaço entre elementos */
@@ -52,12 +53,12 @@ body{
 
 }
 .titulo{
-    font-size: 36px; /* tamanho da fontes */
+    font-size: 2.25rem; /* tamanho da fontes */ /*1 rem é igual a 16 pixels*/
     font-family: 'Krona One', sans-serif; /* estilo de fonte */
 }
 
 .paragrafro{
-    font-size: 24px; /* tamanho da fontes */
+    font-size: 1.5rem; /* tamanho da fontes */
     font-family: 'Montserrat', sans-serif; /* estilo de fonte */
 }
 
@@ -74,7 +75,7 @@ body{
 .subtitulo{
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .botoes__estilo{
@@ -82,10 +83,10 @@ body{
     justify-content: center; /* flexbox para espaçar os elementos */
     gap: 16px; /* Espaço de 16pixels */
     border: 2px solid #22D4FD;
-    width: 378px; /* largura do botão */
+    width: 50%; /* largura do botão */
     text-align: center; /* texto centralizado*/
     border-radius: 8px; /* raio de arredondamento da borda*/
-    font-size: 24px; /* tamanho da letra*/
+    font-size: 1.5rem; /* tamanho da letra*/
     font-weight: 600; /* peso da fonte*/
     padding: 21.5px 0; /* espaço vertical*/
     color:#F6F6F6;  /* Cor da letra*/
@@ -97,13 +98,37 @@ body{
     background-color: #272727;
 }
 
+.imagem__principal{
+    width: 50%;
+}
+
 .rodape{
     color:#000;
     background-color: #22D4FD;
     padding: 24px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
    
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
